@@ -134,7 +134,8 @@ footer {
   margin-top: 10px;
 }
 td {
-  font-size: 10px;
+  font-size: 20px;
+  color: black;
 }
 .top-cloud {
   position: absolute;
