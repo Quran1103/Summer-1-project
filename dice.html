@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dice Game first to 100</title>
+    <meta name="description" content="Pig Dice Game">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/dice.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="css/style.css" href="stylesheet">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,100,300' >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- External Links From Internal Folders -->
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="css/custom.css" >
+    <link rel="stylesheet" href="css/sign_up.css" >
+    <link rel="stylesheet" href="css/contact_form.css" >
+
+    <!-- External JavaScript From Website -->
+    <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- Logo and responsive toggle -->
+      <div class="navbar-header">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <span class="glyphicon glyphicon-fire"></span>
+          LOGO
+        </a>
+        <!-- Responsive Navigation Button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div><!-- /.navbar-header -->
+
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about_me">About Me</a>
+          </li>
+          <li>
+            <a href="dice.html">Dice Game</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learned <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="terms_page.html">Terms</a></li>
+              <li><a href="#">Reflections</a></li>
+              <li><a href="mybrothers.html">Know My Brothers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact_me">Contact</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container -->
+  </nav>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <div class="p1Div">
+            <div class="p1Header">
+                <h1>Player 1<button class="currentPlayer">&#10004;</button></h1>
+            </div>
+            <div class="p1Score">25</div>
+            <div class="p1TempScoreDiv">
+                <h4 class="p1TempScore">Temp Score</h4>
+                <p class="p1TempScoreNo">5</p>
+            </div>
+        </div>
+
+        <div class="p2Div">
+            <div class="p2Header">
+                <h1>Player 2<button class="activeJS currentPlayer">&#10004;</button></h1>
+            </div>
+            <div class="p2Score">
+                <p>25</p>
+            </div>
+            <div class="p2TempScoreDiv">
+                <h4 class="p2TempScore">Temp Score</h4>
+                <p class="p2TempScoreNo">5</p>
+            </div>
+        </div>
+        <div class="middleSection">
+            <div class="newGameBtn"><button><img src="https://raw.githubusercontent.com/porquesammy/Pig-Dice-Game/master/assets/add_circle_outline.png" alt="add symbol">New
+                    Game</button></div>
+            <div class="dice"><img class="diceJS" src="https://raw.githubusercontent.com/porquesammy/Pig-Dice-Game/master/assets/dice6.png" alt="dice"></div>
+            <div class="keepBtn"><button>Keep</button></div>
+            <div class="rollBtn"><button><img src="https://raw.githubusercontent.com/porquesammy/Pig-Dice-Game/master/assets/roll.png" alt="roll symbol">Roll</button></div>
+        </div>
+    </div>
+    <div class="instructions">
+            <p>Roll a ONE and lose your temp score. Press keep to secure points.</p>
+            <p>First to 100 wins.</p>
+        </div>
+
+  <script src="js/dice.js" charset="utf-8"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom Javascript -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

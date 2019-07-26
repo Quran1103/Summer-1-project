@@ -18,7 +18,9 @@ body {
 }
 
 /* || typography */
-
+.htrees{
+  color: black;
+}
 h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
@@ -147,4 +149,7 @@ td {
   background-color: #E4F9F5;
   position: relative;
   padding-top: 100px
+}
+a {
+  color: black;
 }
