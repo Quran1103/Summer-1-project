@@ -178,6 +178,7 @@ button {
 .rollBtn {
     position:relative;
     transform: translate(0%, 405%);
+    background-color: red;
 }
 .rollBtn img {
     height: .75rem;
